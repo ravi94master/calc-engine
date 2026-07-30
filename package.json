@@ -1,0 +1,57 @@
+{
+  "name": "calc-engine",
+  "version": "1.0.0",
+  "description": "A framework-agnostic JavaScript calculator engine. Bring your own HTML/CSS UI — the library handles 100% of the calculator logic.",
+  "type": "module",
+  "main": "dist/calc-engine.cjs",
+  "module": "dist/calc-engine.esm.js",
+  "unpkg": "dist/calc-engine.umd.min.js",
+  "jsdelivr": "dist/calc-engine.umd.min.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/calc-engine.esm.js",
+      "require": "./dist/calc-engine.cjs",
+      "default": "./dist/calc-engine.umd.min.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c && node scripts/copy-types.js",
+    "dev": "rollup -c -w",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "calculator",
+    "calculator-library",
+    "math-parser",
+    "expression-parser",
+    "javascript-calculator",
+    "vanilla-js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rollup": "^4.14.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
