@@ -4,6 +4,8 @@ This guide is for anyone who wants to add a working calculator to a
 webpage **without writing any calculator logic themselves**. If you can
 write basic HTML, you can use this library.
 
+**Always use `<div>` tag to take or Show the output**
+
 You will:
 1. Add one `<script>` tag.
 2. Write plain HTML for your buttons and a display.
