@@ -24,17 +24,13 @@ The easiest way to start is the CDN — no downloads, no build tools, no
 `</body>`:
 
 ```html
-<script src="https://unpkg.com/calc-engine/dist/calc-engine.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ravi94master/calc-engine@main/calc-engine.umd.min.js"></script>
+
 ```
 
 That's the entire installation. It gives your page a global `Calculator`
 object you can use right away.
 
-> If you're using a tool like Vite, Create React App, or a build system,
-> see `docs/developer.md` instead — that guide covers `npm install` and
-> framework integration.
-
----
 
 ## 2. HTML setup
 
@@ -72,7 +68,8 @@ Here's the smallest possible working calculator:
 <button id="clear">C</button>
 <button id="backspace">⌫</button>
 
-<script src="https://unpkg.com/calc-engine/dist/calc-engine.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ravi94master/calc-engine@main/calc-engine.umd.min.js"></script>
+
 <script>
   Calculator.init();
 </script>
