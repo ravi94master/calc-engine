@@ -44,17 +44,15 @@ const Calculator = require('calc-engine');
 
 ```html
 <!-- jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/calc-engine/dist/calc-engine.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ravi94master/calc-engine@main/calc-engine.umd.min.js"></script>
 
-<!-- UNPKG -->
-<script src="https://unpkg.com/calc-engine/dist/calc-engine.umd.min.js"></script>
 ```
 
 Both expose a global `Calculator` object — no bundler needed.
 
 ---
 
-## Framework integration
+## Framework integration (COMING SOON)
 
 The singleton API (`Calculator.init()`) is meant for plain HTML pages
 with global, page-wide `id`s. In a component-based framework you almost
